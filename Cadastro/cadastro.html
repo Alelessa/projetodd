@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="cadastro.css">
+
+</head>
+
+<body>
+    <div class="Sitetotal">
+        <div class="navegacao">
+            <!-- AQUI VAI UM MENU RESPONSIVO -->
+            <button type="button"> Home </button>
+            <button type="button"> Fale conosco </button>
+        </div>
+    </div>
+    <h2> Faça seu cadastro</h2>
+    <!-- AQUI DEPENDENDO DA MARCAÇÃO QUE A PESSOA FIZER NA CHECKBOX, PODE ABRIR UM FORMULÁRIO PERSONALIZADO "JAVASCRIPT"  -->
+    <form>
+        <div class="checkbox">
+            <h4>Como você se identifica?</h4>
+            <input type="radio" name "PF"> Sou um Doador Individual
+            <input type="radio" name "PJ"> Sou uma Empresa Doadora
+            <input type="radio" name "ONG"> Sou uma ONG
+        </div>
+
+            <fieldset>
+                <legend>
+                    <!-- DADOS PESSOA FISICA -->
+                    <h5> DADOS PESSOAIS </h5>
+                </legend>
+                <div>
+                    <p> Nome completo:
+                        <input type="text" name="nome" required>
+                    </p>
+                    <p> Nome social:
+                        <input type="text" name="nomesocial">
+                    </p>
+                    <p> RG:
+                        <input type="text" name="RG" required>
+                        CPF:
+                        <input type="text" name="cpf" size="11" maxlength="11" required>
+                    </p>
+                    <p> Data de Nacimento:
+                        <input type="date" name="data" required> </p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    <!-- DADOS PESSOA JURIDICA/ONG -->
+                    <h5> DADOS PESSOAIS </h5>
+                </legend>
+                <p> Razão Social:
+                    <input type="text" name="razao" required> </p>
+                <p> Nome Fantasia:
+                    <input type="text" name="nome"> </p>
+                <p> CNPJ:
+                    <input type="text" name="cnpj" required> </p>
+            </fieldset>
+
+            <!-- A PARTIR DAQUI O CADASTRO É PADRÃO -->
+            <fieldset>
+                <legend>
+                    <h5> DADOS DE ENDEREÇO </h5>
+                </legend>
+                <div>
+                    <p> Endereço:
+                        <input type="text" name="nome" required> 
+                        Nº <input type="text" name="sobrenome" size="5" maxlength="5" required>
+                        Complemento:
+                        <input type="text" name="complemento">
+                    </p>
+                    <p> Bairro:
+                        <input type="text" name="bairro"> 
+                        CEP: <input type="text" name="cep" size="5" maxlength="5"> -
+                        <input type="text" name="cep2" size="3" maxlength="3">
+                    </p>
+                    <p>Estado:
+                            <input type="text" name="estado" required> 
+                            Cidade: <input type="text" name="cidade">
+                    </p>
+                    <p> Telefone principal:
+                        <input type="text" name="tel" placeholder="(11) 11111-1111" size="11" maxlength="11" required>
+                        Telefone:
+                        <input type="text" name="tel2" placeholder="(11) 11111-1111" size="11" maxlength="11">
+                    </p>
+                </div>
+            </fieldset>
+
+            <!-- DADOS DE LOGIN -->
+            <fieldset>
+                    <legend>
+                        <h5> DADOS DE LOGIN </h5>
+                    </legend>
+                    <div>
+                        <p> Email:
+                            <input type="email" name="email" required> 
+                        </p>
+                        <p> Imagem de perfil <input type="file" name="imagem"></p>
+                        <p> Login de Usuário: <input type="text" name="login" required> </p>
+                        <p> Senha: <input type="password" name="senha" required> </p>
+                        <p> Confirme sua Senha: <input type="password" name="confirmesenha" required> </p>
+                    </div>
+                </fieldset>
+                <br>
+            <div class="botaofinal">
+            <button type="button"> Voltar </button>
+            <button type="button"> Cadastrar </button>
+            </div>
+    </form>
+</body>
+
+<div class="rodape">
+        <div id="textorodape"> Copyright 2018 - todos os direitos reservados
+        </div>
+        <div>
+            <a href="https://www.facebook.com/">
+                <img class="face" src="img/face.jpg" alt ""></a>
+            <a href="https://github.com/">
+                <img class="github" src="img/git.png" alt ""></a>
+</div>
+</div>
+</html>
