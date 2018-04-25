@@ -1,0 +1,64 @@
+.navegacao{
+    display: flex;
+    background: black;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 1px;
+}
+
+button {
+    background-color:black;
+    border: 1px solid #696969;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    width: 100%;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
+
+button:hover:not(.active) {
+    background-color: darkolivegreen;
+}
+
+.logo {
+    width: 200px;
+    padding: 10px;
+    margin: 20px;
+
+    display: flex;
+}
+
+.face{
+    width: 30px;
+    padding: 10px;
+
+
+}
+
+.github{
+width: 30px;
+padding: 10px;
+
+
+}
+
+p{margin: 2px;
+
+
+}
+footer{
+height: 100px;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: black;
+    text-align: center;
+    color: white;
+    margin: 10px;
+display: flex
+}
+
+#googleMap{
+    border-color: black;
+
+}
