@@ -21,97 +21,187 @@ button:hover:not(.active) {
     background-color: darkolivegreen;
 }
 
-img {
-    width: 100px;
-    padding: 10px;
+#esquerda{
+    /* background-color:lemonchiffon; */
+    width: 28%;
+    /* height: 200px; */
+    /* border-color: black; */
+    /* border-style: solid; */
+    margin-left: initial;
+    margin-right: auto;
+    position: absolute;
+    /* display: flex; */
+    
+}
+
+.esquerda{
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-size: 12px;
+    text-align: justify;
+    margin: 10px;
+    padding: 5px;
+    border-color: black;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    background-color: #cbd7ef;
+    box-shadow: 2px 2px lightslategrey;
+}
+}
+.data {
+    text-align: right;
+}
+.mensagem{
+    width: 30px;
+    height: 20px;
+    padding: 1px;
     border-radius: 70%;
-    border-style: solid;
+    border-style: unset;
+    margin: 0px;
+
+}
+#direita{
+    /* background-color: red; */
+    width: 60%;
+    /* height: 200px; */
+    /* border-color: black; */
+    /* border-style: solid; */
+    margin-left: auto;
+    margin-right: initial;
+    position: unset;
+    display: grid;
+        
+}
+
+img {
+    padding: 2px;
+    /* border-radius: 70%; */
     border-color: lightgreen;
     margin: 20px;
+    border-style: outset;
 }
 
 .img1{
     float: right;
+    width: 80px;
+    height: 85px;
 }
 
-.img2{;
+.img2{
     float: left;
+    width: 80px;
+    height: 90px;
 }
 
-
-.clearfix{
-    overflow: auto;
-    background-color: lightgoldenrodyellow;
+/* .clearfix{ */
+    /* overflow: auto; */
+    /* background-color: lightgoldenrodyellow; */
     /* justify-content: left; */
     /* url("img/imagem3.jpg"); */
-}
+/* } */
 
 p {
     font-family: 'IBM Plex Sans Condensed', sans-serif;
-    /* font-size: 18px; */
+    font-size: 12px;
     text-align: justify;
-    /* margin: 0px; */
-    /* padding: 15px 10px 10px 10px; */
-    /* border: 0px */
+    margin: 0px;
+    padding: 0px 0px 0px 14px;
+    border: 0px;
 }
 
-
-
-
- 
-/* body{ */
-    /* background-image: url("/img/imagem4.jpg"); */
+body{
+    background-image: url("/img/imagem4.jpg");
     
-/* } */
-h2{ text-align: right;
-    letter-spacing: 2px;
+}
+h2{ text-align: center;
+    letter-spacing: 1px;
     text-transform: uppercase;
-    color: green;
-    font-size: 25px;
-    font-family: 'Roboto', sans-serif;
-    margin: 100px 10px 10px 10px;
+    color: olive;
+    font-size: 18px;
+    font-family: sans-serif;
+    margin: 30px 0px 0px 15px;
     padding: 0px;
-    border: 0px;
-    text-shadow: 1px 1px gray;  
+    border: 5px;
+    text-shadow: 0px 1px grey;
+    width: initial  
     
 }
 
 h4{
     font-family: 'Abril Fatface', cursive;
     text-align: center;
-    font-size: 30px;
-    margin: 10px;  
+    font-size: 28px;
+    margin: 15px;
+    text-shadow: 1px 1px lightgrey;  
+    letter-spacing: 2px;
 }
 
 
 
-p.pa{  text-align: justify;
-    font-size: 17px;
-    padding: 15px;
-     color: black;
-     font-family: 'Roboto', sans-serif;
-     word-spacing: 1px;
-}
-
-}
-
-.container{
-    justify-content: right;
-    width: 100%;
-    height: 30px;
+p.pa{  
+    
+    text-align: justify;
     font-size: 16px;
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
-    text-align: left;
+    padding: 15px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    word-spacing: 1px;
 }
+
 
 footer{
-
-    list-style-type: none;
-    padding: 30px;
-    overflow: hidden;
+    height: 70px;
     background-color: black;
-    text-align: center;
     color: white;
+    margin: 0px;
+    display: flex;
+    /* background-color: blue; */
+    width: 100%;
+    /* height: 200px; */
+    border-color: black;
+    border-style: solid;
+    margin-left: initial;
+    position: absolute;
+}
+    
+    
+.face{
+    width: 30px;
+    padding: 10px;
+    border-style: none;
+    border-color: black;
+    
+}
+    
+.github{
+    width: 30px;
+    padding: 10px;
+    border-style: none;
+    border-color: black;
+}
+
+input[type=text] {
+    width: 80%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: white;
+    background-image: url(img/lupa.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding: 7px 20px 7px 10px;
+    background-size: 20px 10px;  
+    border-left-width: 3px;
+    padding-left: 30px;
+    margin: 20px 2px 20px 30px;
+}
+
+input {
+    height: 40px;
+    border-radius: 4px;
+    border: 2px solid lightgrey;
+}
+
+#pequisa{
+    display: flex;
 }
