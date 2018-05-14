@@ -18,11 +18,11 @@ padding: 0;
 }
 
 #index{
-    background-color: red;
+    background-color: white;
 }
 
 #mapa{
-    background-color: blue;
+    background-color: white;
 }
 
 #login{
@@ -30,7 +30,7 @@ padding: 0;
 }
 
 #cadastro{
-    background-color: pink;
+    background-color: white;
 }
 
 .link li{
@@ -51,4 +51,6 @@ padding: 0;
 .scrool input{
     display: none;
 }
+
+
 
