@@ -1,0 +1,54 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+.link{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    display: flex;
+}
+.bloco{
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#index{
+    background-color: red;
+}
+
+#mapa{
+    background-color: blue;
+}
+
+#login{
+    background-color: violet;
+}
+
+#cadastro{
+    background-color: pink;
+}
+
+.link li{
+    padding: 10px 0;
+    flex-grow: 1;
+    cursor: pointer;
+    transition: all .4s;
+    text-align:  center;
+    font-family: 'Arial';
+    font-size: 100%;
+    color: black
+}
+
+.link li:hover{
+    background-color: aqua;
+}
+
+.scrool input{
+    display: none;
+}
+
