@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cadastro</title>
+    <script defer src="cadastro.js"></script>
     <link rel="stylesheet" href="cadastro.css">
 
 </head>
@@ -23,45 +24,49 @@
     <form>
         <div class="checkbox">
             <h4>Como você se identifica?</h4>
-            <input type="radio" name "PF"> Sou um Doador Individual
-            <input type="radio" name "PJ"> Sou uma Empresa Doadora
-            <input type="radio" name "ONG"> Sou uma ONG
+            <input type="checkbox" id = "PF" onclick="valida()"> Sou um Doador Individual
+            <input type="checkbox" id = "emp" onclick="valida()"> Sou uma Empresa Doadora
+            <input type="checkbox" name "CH"> Sou uma ONG
         </div>
-
-            <fieldset>
-                <legend>
-                    <!-- DADOS PESSOA FISICA -->
-                    <h5> DADOS PESSOAIS </h5>
-                </legend>
-                <div>
-                    <p> Nome completo:
-                        <input type="text" name="nome" required>
-                    </p>
-                    <p> Nome social:
-                        <input type="text" name="nomesocial">
-                    </p>
-                    <p> RG:
-                        <input type="text" name="RG" required>
-                        CPF:
-                        <input type="text" name="cpf" size="11" maxlength="11" required>
-                    </p>
-                    <p> Data de Nacimento:
-                        <input type="date" name="data" required> </p>
-                </div>
-            </fieldset>
-
-            <fieldset>
-                <legend>
-                    <!-- DADOS PESSOA JURIDICA/ONG -->
-                    <h5> DADOS PESSOAIS </h5>
-                </legend>
-                <p> Razão Social:
-                    <input type="text" name="razao" required> </p>
-                <p> Nome Fantasia:
-                    <input type="text" name="nome"> </p>
-                <p> CNPJ:
-                    <input type="text" name="cnpj" required> </p>
-            </fieldset>
+            <div id="fisica">
+                <fieldset>
+                    <legend>
+                        <!-- DADOS PESSOA FISICA -->
+                        <h5> DADOS PESSOAIS </h5>
+                    </legend>
+                    <div>
+                        <p> Nome completo:
+                            <input type="text" name="nome" required>
+                        </p>
+                        <p> Nome social:
+                            <input type="text" name="nomesocial">
+                        </p>
+                        <p> RG:
+                            <input type="text" name="RG" required>
+                            CPF:
+                            <input type="text" name="cpf" size="11" maxlength="11" required>
+                        </p>
+                        <p> Data de Nacimento:
+                            <input type="date" name="data" required> </p>
+                    </div>
+                </fieldset>
+            </div>
+           
+            <div id="empresa"> 
+                    <fieldset>
+                            <legend>
+                                <!-- DADOS PESSOA JURIDICA/ONG -->
+                                <h5> DADOS PESSOAIS </h5>
+                            </legend>
+                            <p> Razão Social:
+                                <input type="text" name="razao" required> </p>
+                            <p> Nome Fantasia:
+                                <input type="text" name="nome"> </p>
+                            <p> CNPJ:
+                                <input type="text" name="cnpj" required> </p>
+                        </fieldset>
+            </div>
+            
 
             <!-- A PARTIR DAQUI O CADASTRO É PADRÃO -->
             <fieldset>
