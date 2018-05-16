@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Bungee+Shade" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
     <script src="index.js"></script>
     <link rel="stylesheet" href="index.css">
     <title>Document</title>
@@ -17,7 +19,7 @@
         <li><a href="#cadastro">Cadastre-se</a></li>
     </nav>
     
-    <section class="sections">
+    <section class="sections" id="home">
         <section class="bloco" id="index">
             <div class="logo">
                 <img src="../Pesquisa-ong/img/logoaplicacao.png" alt="logo">
@@ -31,7 +33,14 @@
             </div>
         </section>
         
+        <!-- PARTE DE MAPA -->        
+        
         <section class="bloco" id="mapa">
+            <div id="cep">
+                <h2>Encontre seu ponto mais perto </h2>
+                <p> CEP <input id="cep" placeholder= "DIGITE SEU CEP AQUI" ></p>
+            </div>
+            
             <div id="googleMap" style="width:90%; height:400px;"></div>
             
             <script>
@@ -49,7 +58,33 @@
             <script src="https://maps.googleapis.com/maps/api/js?AIzaSyA4n2aJYgTnEqgeiw-YzyCD6PgtoY6jQQo&callback=myMap"></script>
         </section>
         
+        
+        <!-- AREA DE LOGIN, COM EXERCICIO QUE FIZEMOS ANTES -->
         <section class="bloco" id="login">
+            <div class="centrallogin">
+                <div class = "interno">
+                    <div class="login">
+                        <!-- <div id="logo">
+                            <img src="img/user.png" alt="user" > 
+                        </div> -->
+                        <p>Login</p> 
+                    </div>
+                    <div class="input-div" id="input-usuario">    
+                        <input type="text" id="usuario" placeholder ="Usuario email"/> 
+                    </div>
+                    <div class="input-div" id="input-senha">
+                        <input type="" id="senha" placeholder="senha"/>
+                    </div>
+                    <div class="botao">
+                        <button id= "botao1">Entrar</button>
+                    </div>
+                    <div class="lembrarsenha">
+                        <a href=""> Esqueci minha senha</a>
+                    </div>
+                    <div id="resposta">
+                    </div>
+                </div>
+            </div>  
         </section>
         
         <section class="bloco" id="cadastro">
@@ -145,7 +180,6 @@
                                     </fieldset>
                                     <br>
                                     <div class="botaofinal">
-                                        <button type="button"> Voltar </button>
                                         <button type="button"> Cadastrar </button>
                                     </div>
                                 </form>
