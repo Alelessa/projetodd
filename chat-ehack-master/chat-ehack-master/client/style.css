@@ -1,0 +1,103 @@
+
+.chat {
+    float:center;
+    width: 50%;
+    height: 74vh;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    overflow-y: scroll;
+    scroll-behavior: auto;
+}
+
+.msgs{
+    height: 400px;
+    border-style: solid;
+    border-color: coral;
+    border-width: 3px;
+    display: flex;
+    margin-left: 50%;
+}
+
+#msgs{
+    text-align: center;
+    margin-top: 5px;
+}
+
+.topo {
+    display: flex;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+}
+
+.topo h1 {
+    font-family: 'Courier New', Courier, monospace;
+    size: 30px;
+    margin-right: 10px;
+}
+
+.topo input {
+    width: 200px;
+    height: 30px;
+}
+
+.msg {
+    display: grid;
+    flex-wrap: wrap;
+    /* position: absolute; */
+    margin: 5px;
+    padding: 5px;
+    width: 98%;
+}
+
+.rec {
+    background-color:rgb(140, 153, 248) ;
+    justify-content: flex-start;
+    margin-right: 50%;
+    width:47%;
+}
+
+.env {
+    background-color:rgb(169, 255, 169) ;
+    justify-content: flex-end;
+    margin-left: 50%;
+    width:47%;
+}
+
+.conectou {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: initial;
+}
+
+.nome {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: initial;
+    padding: 0px;
+    margin-top: 0px;
+    margin-left: 5px;
+    margin-right: 0px;
+    margin-bottom: 5px;
+    padding-right: 5px;
+}
+
+.texto {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: initial;
+    margin-top: 0px;
+    margin-left: 5px;
+    margin-right: 0px;
+    margin-bottom: 5px;
+}
+
+#input {
+    margin-bottom: 20px;
+    height: 40px;
+    position: fixed;
+    width: 97.5%;
+    bottom: 0%;
+    margin-left: 3px;
+}
