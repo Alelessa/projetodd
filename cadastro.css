@@ -1,0 +1,102 @@
+body {
+    background-image: url("img/porcelanato_borda_arredondada_neutra_cinza_58x58cm_pamesa_89373634_0001_600x600.jpg");
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15x;
+}
+
+form {
+    margin: 0 auto;
+    width: 95%;
+    padding: 1em;
+    border: 1px solid black;
+    border-radius: 1em;
+    background-color: whitesmoke;
+}
+
+nav{
+    display: block;
+    display: flex;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    
+}
+
+nav a:hover{
+    text-decoration: underline;
+    }
+
+.link li{
+    padding: 10px 0;
+    flex-grow: 1;
+    cursor: pointer;
+    transition: all .4s;
+    text-align:  center;
+    font-family: 'Arial';
+    font-size: 100%;
+    color: black
+}
+    
+.link li:hover{
+    background-color: black;
+}
+    
+.link a{
+    color: #EFE9DD;
+}
+
+input {
+    width: 350px;
+    padding: 3px;
+
+}
+.checkbox input{
+    width: 30px;
+}
+
+.navegacao{
+    display: flex;
+    background: black;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 1px;
+}
+   
+.clearfix{
+    overflow: auto;
+    background-color: beige;
+}
+
+p {
+    padding: 3px;
+    text-decoration: none;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-size: 15px;
+    text-align: justify;
+    margin: 0px;
+    border: 0px
+}
+
+fieldset input{
+    position: sticky; 
+	left: 200px;
+    margin: 2px;
+    padding: 3px;
+}
+    
+h2{ 
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Bungee Shade', cursive;
+    font-size: 30px;
+    margin: 30px 20px 20px 20px;
+    padding: 3px;
+}  
+
+h4{
+    font-size: 20px;
+    margin-top: 15px;
+}
